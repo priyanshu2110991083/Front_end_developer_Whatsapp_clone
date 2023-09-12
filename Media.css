@@ -1,0 +1,179 @@
+@media (max-width:430px) {
+    .upper {
+        display: none;
+    }
+
+    .lower {
+        height: 100%;
+        background-image: linear-gradient(hsl(0, 3%, 94%), hsl(0, 4%, 84%));
+    }
+
+    .main {
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+      position: fixed;
+    }
+    .rightImg{
+        display: none;
+    }
+    #write{
+        display: none;
+    }
+    .end{
+        display: none;
+    }
+    .InUl{
+        left: 175px;
+    }
+    .Inp{
+        width: 340px;
+        margin-left: 11px;
+    }
+    .N-1 {
+        margin-top: 175%;
+    }
+    .start {
+        width: 113%;
+        height: 100%;
+    }
+    .inStart{
+        left: 9%;
+    }
+}
+
+@media (min-width:430px) and (max-width:769px) {
+    .upper {
+        display: none;
+    }
+
+    .lower {
+        height: 100%;
+        background-image: linear-gradient(hsl(0, 3%, 94%), hsl(0, 4%, 84%));
+    }
+    #div1 {
+       
+        width: 349px;
+    }
+    .main {
+        width: 100%;
+        height: 195%;
+        top: 0px;
+        left: 0px;
+       position: fixed;
+    }
+    .rightImg{
+        top: 149px;
+        right: -232px;
+    width: 150px;
+    height: 100px;
+    }
+    #write{
+        position: absolute;
+        top: 300px;
+        right: -287px;
+       
+        width: 261px;
+    }
+    .end{
+        top: 526px;
+        right: -234px;
+    }
+    .InUl{
+        right:328px;
+    }
+    .N-1 {
+        margin-top: 222%;
+    }
+    .foot{
+        width: 54.3%;
+        
+        top: 630.5px;
+    }
+    .message {
+        right: 550px;
+    }
+    .inStart{
+        left: 30%;
+    }
+    .DesBox {
+        width: 417px;
+        left: 0px;
+    }
+    .topCross {
+        width: 54.64%;
+    }
+}
+
+@media (min-width:770px) and (max-width:1026px) {
+    .upper {
+        display: none;
+    }
+
+    .lower {
+        height: 100%;
+        background-image: linear-gradient(hsl(0, 3%, 94%), hsl(0, 4%, 84%));
+    }
+
+    .main {
+        width: 100%;
+        height: 195%;
+        top: -2px;
+        left: -2px;
+        position: fixed;
+    }
+    .rightImg{
+        top: 141px;
+        right: -430px;
+        width: 260px;
+        height: 160px;
+    }
+    #write{
+        top: 350px;
+        right: -534px;
+    }
+    .end{
+        top: 548px;
+        right: -382px;
+    }
+    .InUl{
+        left: 211px;
+    }
+    #RiNav{
+        right: 93px;
+    }
+    .foot {
+        width: 53%;
+        top: 630.5px;
+    }
+    .message{
+        top: 570.7px;
+        right: 420px;
+    }
+    .inStart{
+        left: 34%;
+    }
+    .DesBox{
+        width: 543px;
+        left: 1px;
+        
+    }
+    .topCross {
+        width: 53.64%;
+    }
+}
+
+@media (min-width:1026px) and (max-width:1443px){
+    .main{
+        position: fixed;
+    }
+    #div2{
+        position: fixed;
+    }
+    .InUl{
+        top: 20px;
+        left: 172px;
+    }
+    
+}

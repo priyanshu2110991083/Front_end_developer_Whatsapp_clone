@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8RERIQEA8SFhUQEBIVERMSDhAWEhYRGBEWGBUVFRUYHSggGBomHRYVITEhJSkrLi4uFx8zODUsNyktLisBCgoKDg0OGxAQGy0mICItLS0yLS0tLS44NTAtLS0tLjArLy0tLTAvLi0tLy0tLTUtLS0tLy0tLS8vLTYvLTMtLf/AABEIAOEA4AMBIgACEQEDEQH/xAAbAAEAAQUBAAAAAAAAAAAAAAAAAgEDBAYHBf/EAEEQAAIBAgIHBAYIBQIHAAAAAAABAgMRBCEFBhIxQVFxImGBkRMyUqGxwQcUQmKC0eHwI3KSorIzUxUkQ3PC0vH/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAwQFBgIB/8QAMxEAAgEDAQUHBAEDBQAAAAAAAAECAwQRMRIhQVFxBWGRscHR8BNCgaHhIjJSFBUjQ1P/2gAMAwEAAhEDEQA/AO4gAAAAAAAAAAAAAAAo2RdRAEwWXWRH6wgDIBj/AFhElXQBeBbVRElIAkAAAAAAAAAAAAAAAAAAAAAAAACMpFidVvJZsAvSqJFl1r5JX6FVQvnJ+C3F6MUtyALCpze9pe9klhlxbfiXwAWlQh7K8cyXoo+yvJEwAQ9FH2V5Ig6EPZ8rovAAxnhVwk17yLhUW6z6bzLABiRxHB5PvL8aiZWcU8mrmPPDtZwfg/kwDKTKmJTr8Hk+TMmMrgEgAAAAAAAAAAAAAACE52E52LMIueb3fEAok59y5/kZEIpZIkAARk0lduyW9s8fS+nqVC8V26nsp5Lq+HTeahpDSdau/wCJPLhBZQX59Xcr1LiMN2rKle9p0t2r5e7+PuNuxmsuHp5Rbm/u+r/U8vK542I1rry9SEYLrtS88l7jXwU53NSXHHQzJ31aWjx099T0KumsVLfXl+HZXwsY7x9Z76s31nL8zHBE5SerZWdSb1b8WZEdIVluq1F0m/zMilpvFR3VpP8Am2Zf5JnngKclxYVSa0k/FmxYbW2qv9SmpLnF7L+afuPbwWsGHq2W3syf2Zq3k93vNCBNG5qLV56lqnfVo6vPX318zqgOd6N0zXoWUZbUfYl6tu7jHwNw0XpiliFaLtNLOEt/Vc1+8i5SuI1N2j+aGnQu4Vd2j5e3Pz7jPq0VLf4PijGvKDtLdwfAziE4pqzWTJy0UpzuXDBknTfc9z+TMqnO4BcAAAAAAAAAIyZIxq0uC3sAoltu3Bb/AMjJSI04WViYANS0/rHvpYeXdKovhH8/LmNa9N2vh6T7qkl/in8fLmapco3Fx9sfEyr28abp0/y/RFbi5S4uUTJyVuLlLi4GStxcpcXAyVuLlLi4GStxcpcXAyVuVjNxalFtNO6admnzTI3Fwfcm6av6wKralVaU/sy3Kfd3P4+42Q5Nc3bVjTfpl6Ko/wCJFZN/bj/7Lj58zQt7ja/plrwNizvHL/jnrwfP5++uuwTgmmnuZhxbhLZfg+aM8s4mjtLvWa6lw0i5CVyRh4WrwMtAFQAAAAAQqSsWqEbtyfRfMpiJcFxyL8I2SXIAkeNrHpX0FLsvtzuod3N+HxaPZOZad0h9YrSnfsrs0/5Fx8c34kFxV2I7tWU72v8ASp7tXp6v5xaMPaKXIAyjny5CMpNRim3J2SW9s2vCan3inWqtSf2YpWXdfiXdTdFqMPTzXandQvwjub6v4dTaS/Qt4uO1Pia9pZRcduos50Rp+O1RUYOVGcpSir7Mku13J8GaqmdaOb6z4H0OImkuzPtR6N5rwd/Cx4uqMYpSiR39rGmlOCwtH7+55txchcXKZmE7i5C4uATuLkLi4BO4uQuLgE7kqVWUJKcXaUWnFrg0Wri4B03Q+kY4ilGosnumuU1vXz6NHoHPtUdIejrqDfZrWi+6S9V/LxOgmtQqfUhnidHa1/rU1J66MwcTHZmpLdLf1MqlK6I4mntRa48OvAsYOpdExZM0AAApIqQqPIAs0859F7zJMfDL1nzdvL/6ZAB4utWL9FhptetO0I+L7X9qkc6ubRr9iLzpUvZhKT6ydl/i/M1W5l3U9qpjkYHaFTarY5bvVkrh3eS3vd1I3JQqbMlL2Wn5O5XKL0OtYeioRjCO6EVFdErIugG4dbjG4Gua6YHboKol2qLv+F2Uvk/A2MxNJVoQo1JVPVUXtLmnls+N7eJ4qRUoNMirQU6covkcruLkEVuYxy+SVxcjcXB9JXFyNxcAlcXI3FwCVxcjcXAJX5Po0dS0Ri/TUKdXjKPa/mTtJeaZyu5u+oeJvSnTf2JKS/lkn84vzLVpPE8c/Q0OzamKrjzXl/GTajz4rZqSXfdeOZ6BgY3KcXzTXk/1NI3DNiyRbpPIuAAtVnkXSziNwAwq7K8fiXi3Q9VdC4Ac01trbWLq/d2Irwgr+9s8e5nawyviq/8A3GvLIwLmNU3zfVnLVnmpJ9782VuLlLi54Izp+reN9Nh6cuKWzLntRyz6qz8T1TnepmlfRVvRTfYq2Xcp/ZfjuOiGtQqbcEzpLSt9WknxW5/O8HOdZ9PfWJ7FN/woPL78ub7uS8enRjmOs2iXhqzUV/DqXlB8Fzj4fCxFduWxu04+hX7Sc1SWzpx9PxnX8I8q4uUuLmcYZW4uUuLgFbi5S4uAVuLlLi4BW4uUuLgFbmzahVbV6kPapt+KkrfFmsXPe1If/NR74S/xJaDxUj1LFo8V4dToxh6RWUX975MzDF0j6i/mRrnSk8O8i+Y+F3GQACziNxeLVZZADD+quhdLGEfZtyb+N/mXwDlWskbYuuvv384p/M8657mvFDZxcpf7kYS8oqP/AIngXMaosTa7zl7iOzVmu9+ZO4uQuLnghJ3Oh6paa+sU9io/4tNZ33yhuUuvB+HM5zcvYPFTo1I1abtKDuuT5p809xLRqunLPAsW1w6M9rhx+c1wOxmBpXR0MRSlSnxzi+MZLdJfvmR0NpSGJpqpDJ7pxvnGXFP5Pieia26S5pnR/wBNSPNNHIdIYKpQqOlUVmtz4SjwlF8UzHudT0zomliobFRWavsTXrRfdzXNHOdL6IrYWWzUjk32Zr1Jfk+5/qZdag6bytDAurSVF5W+Pl199DCuLkQQFMlcXNh1U1fVe9Wsn6JXUUm1tyzvms9ld3Hoz1dI6k0pZ4ebh92W1KHnvXvJo29SUdpItQs604bcV+9/Xp+ehpNxcyNI6Nr4d2rU3HPKW+D6SWXhvMUhaaeGVmmnhrDJXFyIB8JXNh1EjfFdKcn8vma4bb9HlK9StU9mEI/1Nt/4oloLNSJZs1mvDr5bzezD0i+yu+S+ZmGFpF+oucm/Jfqa50pdwu4yCzh1kXgAQqImUYBjYV5yXR/v3GUYjezNPnk/H9oywDS/pFwvZpVl9lyhLxW1H4S8zSbnWdOYFYihUpcZRvH+ZNOPvSOR34NWa3p70+TMy7jieeZgdpU9mrtf5ea19CdxcjcXKpnkri5G4uAZ2iNK1MNUVSm+6cW+zOPJ/J8PNPp+idKUsTTVSm+6UX60ZezJczkVzJ0bpGrQqKpSlZ8U84yXKS4osUK7pvD0LtpeOg8PfHl6o7GWa1GE4uE4qUZKzjJJprvTPJ0BrBRxKST2als6befe4vivfzPcNOMlJZWhvwnGpHai8pmm6V1Jg7yw09l+xJtx8Jb143PJ0ZqliZ1VGvBwpxfbltxd1yjZ73z4e46QCGVrTbzgqy7PoOW1jHctPnTBao0owjGEIpRikopbkluRdALBdLdWnGScZJNNWaaTTXemalrBqnR9HOtRbg4wlJw3waSbaV3eL93cbieVrNiFTwtab9hxXWb2V/kRVYRlF7SILinTnTe2tEzlVxcimLmOcsSudF1EwuxhVN76spP8Keyvg34nPMJh5VakKUPWqSUVluu977lv8DsOGoRpwjCK7MIqMeiVkXLOGZOXI1Oy6eZufJY8fZF88/Fu9RL2V73+0egeZh+1Jy5v3cPcaJuGfSWRcKJFQAAADGxULouUKm1FPz6kqiMXDtqbjwln0aAM05trzor0Vb08V2KzbfJVLdpePrefI6SeJrb6P6nWdRXSird07pRa8WveQ3EFOD7t5VvKSqUmnw3+HzecruLkbi5kHMEri5G4uASuLkbi4BNNppp2ad007NPg0+BtGiNdatO0a69JFfbulNLrufjZmqXFz3CcoPMWS0q06T2oPHzidb0brBhcRlTqraf2Jdmd+ST3+Fz1jhrPTwOsGLpZU68rL7MrSjbkk72XkW4Xv+S8DTpdq/8ApHw9n7nXwc8oa/V1/qUKcu+MpR/MnU1/qtdnDQT5yqSa8kif/VUuf6Lf+42/N+D9jfKtSMU5Skkoq7baSS5tvcc51v1iWIapUv8AShK+1u2p7r25LO3PyPI0rprE4l/xajaveMFkl+Fb+ubPPuVK1y5rZjuRnXfaH1VsQ3LjzfsSuLkbnpaB0TPFVlSjdJZ1J+zHnbm9y/JMrJNvCKEIuclGOrNl+j7RV9rFSXONLrmptfDzN6LOHoRpwjTgrRhFRilwS3F42KVNU47KOot6Ko01BfHxMTH1LRst88vDj++8phKdkWHL0k9rgso9OZn042JCYuAAAAAAjNljDx7Unyy/P5FyvLIphY2iu/MAvGm/SRjNmjTop51ZSl+GCV1/cn4G5HLNfcZ6TGSgnlRhGPde15P+634SvdSxTffuKPaNTYoPv3fPxk18FLi5lHOFQQ2yVwfMlbi5S4uD6VuLlLi4BW4uUuLgFbi5S4uAVuLlLnpaD0HXxcrU1aCfbqSXYj3W+1LuXjbefYxcnhHqEZTlsxWWY+jsDVxFRUqUbyl/TGPGUnwS/eZ1bQeiKeFpKnDNvOcms5S59y5LgNC6Ho4WnsUlm/Xm/Wk+bfy3I9Q1KFD6e96nQWdkqK2pf3P9dPV8QYOOr/8ATjvfrdy/UvYrEqC5ye5fN9xjYWi73ebebZYL5ewtKyMpFIxJAAAAAAowDGxLvlzdjJSMZZzXdmZQBbq1FGLlJ2UU233JXZyX/hGNxVSdWOGn/Ek5Nu0Y5ybycrJpX4HXgQ1aKqYy9yKtzaqvhSbSXL4znWE+j+tLOrWhDujFzlbxaSfme9hNScFDOUZTf3pyS/pjbLrc2cHyNvTjw8d58hY28Ptz13+Z570RhXTdL0FPYe+Kilnzus79+807TGocleWEldf7U2lLopvJ+NurOgg9TowmsNEla2pVViS+fPwcPxeFqUpbFWnKEuUotX6c13osncMRQhUi41IRlF74ySafgzwMdqXgql2qcoN8YVJfCV0vBFSdnL7X6GVU7Kmv7JJ9d38eRy8G9V/o9X2MV4So3fmpfIxJfR/iOGIpvrGa+TIXbVVwKrsLhfb+17moA3CH0fV+OIprpCb/ACMzD/R7Ff6mJlJco0kvfJv4BW1V8BGwuH9vi17mhGVo/R1fEPZo0pTzs7Lsrq3kvFnTMBqjgqWapbTXGcpP+3d7j3acFFKMUkluSSSXRE8LN/c/At0uypf9kvD3fszSdDaiRVp4qW2/9qN1H8Ur3fRW8TdKNGMIqEIqMYq0YxSSS5JLcXQXIU4wWIo1aNvTorEFj5zBjYnFKGW+T3L5vuLNbG37NPP73Dw5kaGGzu8297Z7JiNGi5Palm2ehCFhCFiYAAAAAAAIVGTLdUAt4Ves+bt5GQY3plFWs305liWKqP1Ypdc2AegWqleEd8ku6+fkYLp1JetN+dl5InTwSXAAnPHx+zFv3L3luWJqy3JR8Lv3/kZEMOi6qSAMCnUqxzb2u5/LkZNPGQe/svv3eZfdNFmph0wDJB531dx9VtdGSVaquT6r8gDPBgrGy40/KX6Ffr33JeaAM0GF9f8AuPzRF42fCmvGX6AGeRlJLe0urMB1a0uKXRfmRWFbzk2+ruAX6uOisopyfkvMx5KdT1nlyW79TKp4ZIvxgkAWKOHSMiMSQAAAAAAAAAABRoqAC06RVUkXAARUStioAAAAAAAKNEXBEwAWnSRT0CLwALPoEVVJF0AEFBEkioAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//Z">
+    <title>Whatsapp</title>
+    <link rel="stylesheet" href="what.css">
+    <link rel="stylesheet" href="Media.css">
+</head>
+
+<body>
+    <div class="start">
+        <div class="inStart">
+            <img src="StartImg2.png" alt="" id="imgStart">
+            <div id="line">
+                <div class="inLine"></div>
+            </div>
+            <p style="    margin-top: 10px;font-size: 20px;opacity: 0.7;">Whatsapp</p>
+            <h5 style="opacity: 0.2; margin-top: 10px;">End-to-end encrypted</h5>
+        </div>
+    </div>
+    <div class="ThreeDot1">
+
+    </div>
+    <div class="ThreeDot2">
+
+    </div>
+    <div class="BigImg" id="BigIm">
+        <div class="InBigNav">
+            <div class="left">
+
+            </div>
+            <div class="rightCross">
+                <img src="whiteCross.png" alt="" onclick="closeIt()">
+            </div>
+        </div>
+        <div class="BigI">
+            <!-- it will automatically take name as i have applied javascript on it -->
+        </div>
+    </div>
+    <div class="outer">
+        <div class="upper" id="up"></div>
+
+        <div class="lower"></div>
+    </div>
+    <div class="main">
+        <div class="inDiv" id="div1">
+            <div class="up">
+                <img src="My_Pic3.jpg" alt="" class="circleImg">
+                <ul class="InUl">
+                    <li class="item"><a href="https://google.com"><img src="comunity.png" alt="" class="Im" id="I1"></a>
+                    </li>
+                    <li class="item"><img src="circle.png" alt="" class="Im" id="I2"></li>
+                    <li class="item"><img src="chat.png" alt="" class="Im" id="I3"></li>
+                    <li class="item" onclick="HamDes()"><img src="HamBurger.png" alt="" class="Im" id="I4"></li>
+                </ul>
+                <div class="InUp">
+                    <input type="text" placeholder="Search or start a new chat" class="Inp">
+                    <img src="Filter.png" alt="" class="filter">
+                </div>
+            </div>
+            <div class="down">
+                <div class="Names N-1">
+                    <img src="My_Pic3.jpg" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick1()">9805396758(Me)
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+
+                <div class="Names N-2">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick2()">Mummy ji
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-3">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick3()">Papa ji
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-4">
+                    <img src="friendGrp.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick4()">Friends Community Group
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-5">
+                    <img src="ishan.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick5()">Ishan
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-6">
+                    <img src="Kim-Jong.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick6()">kim-jong-un
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-7">
+                    <img src="pratham.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick7()">Pratham Arora
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-8">
+                    <img src="dell.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick8()">Dell
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-9">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick9()">Name-9
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-10">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick10()">Name-10
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-11">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick11()">Name-11
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-12">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick12()">Name-12
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-13">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick13()">Name-13
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-14">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick14()">Name-14
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-15">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick15()">Name-15
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-16">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick16()">Name-16
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+                <div class="Names N-17">
+                    <img src="W_ODP.png" alt="" class="Profile">
+                    <button class="btn" onclick="MyClick17()">Name-17
+                        <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="inDiv" id="div2">
+            <div class="big">
+
+                <img src="whatPic.png" alt="img not available" class="rightImg">
+                <div id="write">
+                    <p id="head">Whatsapp Web</p>
+                    <p>Send and receive messages without keeping your phone online.</p>
+                    <p>Use Whatsapp on up to 4 linked devices and 1 phone at the same time.</p>
+                </div>
+                <div class="end">
+                    <img src="EndEncrypt.png" alt="">
+                </div>
+
+                <div class="box" id="box-1">
+                    <div class="nav2" onclick="showDes()">
+                        <img src="My_Pic3.jpg" alt="" class="circleImg" id="b1i1">
+                        <div class="Cre">
+                            <p style=" margin-top: 10px;" id="b1p1">9805396758</p>
+                            <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                            <div id="RiNav">
+                                <img src="search.png" alt="" id="rightNav" class="search">
+                                <img src="HamBurger.png" alt="" id="rightNav" class="Ham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="message" id="mess">
+
+                        </div>
+                        <div class="foot">
+                            <img src="smily.png" alt="" class="FootPic F1">
+                            <img src="plus.png" alt="" class="FootPic F2">
+                            <input type="text" placeholder="Type a messages" id="BaseInp1" onclick="clickMe()">
+                            <img src="send.png" alt="" class="F3" id="f4" onclick="Event2()">
+                            <img src="mic.png" alt="" class="F3" id="f5">
+                        </div>
+                    </div>
+                </div>
+                <div class="DesBox" id="Des1" id="Dis">
+                    <div class="topCross">
+                        <div class="insi">
+                            <img src="cross.png" alt="" onclick="CloseDes()">
+                            <p style="margin-left: 30px;opacity: 0.8;">Contact info</p>
+                        </div>
+                    </div>
+                    <div class="MidImg">
+                        <div class="InMid">
+                            <img src="My_Pic3.jpg" alt="" id="CirImg" onclick="ShowBig()">
+                            <p style="margin-top: 22px;">Self</p>
+                            <p id="opa">+91 9805391150</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="about">
+                        <div class="InAbout">
+                            <p style="opacity: 0.7;">About</p>
+                            <p style="font-size: 24px;font-family: system-ui;">Proud To Be INDIAN😎😎....</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="media about">
+                        <div class="InAbout">
+                            <p style="font-size: 17px;font-family: system-ui;">Media, Links, Docs..</p>
+                            <p style="font-size: 14px;font-family: system-ui;">No Media</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="stared">
+                        <ul class="star">
+                            <li><img src="star.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Starred Messages</p>
+                            </li>
+                            <li style="margin-left: 214px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="disap.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Disappearing Messages</p>
+                            </li>
+                            <li style="margin-left: 177px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="lock.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Encryption</p>
+                            </li>
+                            <li style="margin-left: 253px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="dele.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;color: red;">Delete Chat</p>
+                            </li>
+                            <li style="margin-left: 244px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="box" id="box-2">
+                    <div class="nav2" onclick="showDes1()">
+                        <img src="W_ODP.png" alt="" class="circleImg" id="b2i2">
+                        <div class="Cre">
+                            <p style=" margin-top: 10px;" id="b2p2">Mummy ji</p>
+                            <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                            <div id="RiNav">
+                                <img src="search.png" alt="" id="rightNav" class="search">
+                                <img src="HamBurger.png" alt="" id="rightNav" class="Ham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="message" id="mess2">
+
+                        </div>
+                        <div class="foot">
+                            <img src="smily.png" alt="" class="FootPic F1">
+                            <img src="plus.png" alt="" class="FootPic F2">
+                            <input type="text" placeholder="Type a messages" id="BaseInp2" onclick="clickMe2()">
+                            <img src="send.png" alt="" class="F3" id="f6" onclick="Event22()">
+                            <img src="mic.png" alt="" class="F3" id="f7">
+                        </div>
+                    </div>
+                </div>
+                <div class="DesBox" id="Des2" id="Dis">
+                    <div class="topCross">
+                        <div class="insi">
+                            <img src="cross.png" alt="" onclick="CloseDes1()">
+                            <p style="margin-left: 30px;opacity: 0.8;">Contact info</p>
+                        </div>
+                    </div>
+                    <div class="MidImg">
+                        <div class="InMid">
+                            <img src="W_ODP.png" alt="" id="CirImg" onclick="ShowBig2()">
+                            <p style="margin-top: 22px;">Mummy ji</p>
+                            <p id="opa">+91 4356767566</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="about">
+                        <div class="InAbout">
+                            <p style="opacity: 0.7;">About</p>
+                            <p style="font-size: 24px;font-family: system-ui;">Proud To Be INDIAN😎😎....</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="media about">
+                        <div class="InAbout">
+                            <p style="font-size: 17px;font-family: system-ui;">Media, Links, Docs..</p>
+                            <p style="font-size: 14px;font-family: system-ui;">No Media</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="stared">
+                        <ul class="star">
+                            <li><img src="star.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Starred Messages</p>
+                            </li>
+                            <li style="margin-left: 214px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="disap.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Disappearing Messages</p>
+                            </li>
+                            <li style="margin-left: 177px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="lock.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Encryption</p>
+                            </li>
+                            <li style="margin-left: 253px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="dele.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;color: red;">Delete Chat</p>
+                            </li>
+                            <li style="margin-left: 244px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box" id="box-3">
+                    <div class="nav2" onclick="showDes2()">
+                        <img src="W_ODP.png" alt="" class="circleImg" id="b3i3">
+                        <div class="Cre">
+                            <p style=" margin-top: 10px;" id="b3p3">Papa ji</p>
+                            <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                            <div id="RiNav">
+                                <img src="search.png" alt="" id="rightNav" class="search">
+                                <img src="HamBurger.png" alt="" id="rightNav" class="Ham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="message" id="mess3">
+
+                        </div>
+                        <div class="foot">
+                            <img src="smily.png" alt="" class="FootPic F1">
+                            <img src="plus.png" alt="" class="FootPic F2">
+                            <input type="text" placeholder="Type a messages" id="BaseInp3" onclick="clickMe3()">
+                            <img src="send.png" alt="" class="F3" id="f8" onclick="Event23()">
+                            <img src="mic.png" alt="" class="F3" id="f9">
+                        </div>
+                    </div>
+                </div>
+                <div class="DesBox" id="Des3" id="Dis">
+                    <div class="topCross">
+                        <div class="insi">
+                            <img src="cross.png" alt="" onclick="CloseDes2()">
+                            <p style="margin-left: 30px;opacity: 0.8;">Contact info</p>
+                        </div>
+                    </div>
+                    <div class="MidImg">
+                        <div class="InMid">
+                            <img src="W_ODP.png" alt="" id="CirImg" onclick="ShowBig3()">
+                            <p style="margin-top: 22px;">Papa ji</p>
+                            <p id="opa">+91 4356767566</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="about">
+                        <div class="InAbout">
+                            <p style="opacity: 0.7;">About</p>
+                            <p style="font-size: 24px;font-family: system-ui;">Proud To Be INDIAN😎😎....</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="media about">
+                        <div class="InAbout">
+                            <p style="font-size: 17px;font-family: system-ui;">Media, Links, Docs..</p>
+                            <p style="font-size: 14px;font-family: system-ui;">No Media</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="stared">
+                        <ul class="star">
+                            <li><img src="star.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Starred Messages</p>
+                            </li>
+                            <li style="margin-left: 214px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="disap.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Disappearing Messages</p>
+                            </li>
+                            <li style="margin-left: 177px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="lock.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Encryption</p>
+                            </li>
+                            <li style="margin-left: 253px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="dele.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;color: red;">Delete Chat</p>
+                            </li>
+                            <li style="margin-left: 244px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box" id="box-4">
+                    <div class="nav2" onclick="showDes3()">
+                        <img src="friendGrp.png" alt="" class="circleImg" id="b4i4">
+                        <div class="Cre">
+                            <p style=" margin-top: 10px;" id="b4p4">Friends Community Group</p>
+                            <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                            <div id="RiNav">
+                                <img src="search.png" alt="" id="rightNav" class="search">
+                                <img src="HamBurger.png" alt="" id="rightNav" class="Ham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="message" id="mess4">
+
+                        </div>
+                        <div class="foot">
+                            <img src="smily.png" alt="" class="FootPic F1">
+                            <img src="plus.png" alt="" class="FootPic F2">
+                            <input type="text" placeholder="Type a messages" id="BaseInp4" onclick="clickMe4()">
+                            <img src="send.png" alt="" class="F3" id="f10" onclick="Event24()">
+                            <img src="mic.png" alt="" class="F3" id="f11">
+                        </div>
+                    </div>
+                </div>
+                <div class="DesBox" id="Des4" id="Dis">
+                    <div class="topCross">
+                        <div class="insi">
+                            <img src="cross.png" alt="" onclick="CloseDes3()">
+                            <p style="margin-left: 30px;opacity: 0.8;">Contact info</p>
+                        </div>
+                    </div>
+                    <div class="MidImg">
+                        <div class="InMid">
+                            <img src="friendGrp.png" id="CirImg" onclick="ShowBig3()">
+                            <p style="margin-top: 22px;">Friends Community Group</p>
+                            <p id="opa">+91 78687463874</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="about">
+                        <div class="InAbout">
+                            <p style="opacity: 0.7;">About</p>
+                            <p style="font-size: 24px;font-family: system-ui;">Proud To Be INDIAN😎😎....</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="media about">
+                        <div class="InAbout">
+                            <p style="font-size: 17px;font-family: system-ui;">Media, Links, Docs..</p>
+                            <p style="font-size: 14px;font-family: system-ui;">No Media</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="stared">
+                        <ul class="star">
+                            <li><img src="star.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Starred Messages</p>
+                            </li>
+                            <li style="margin-left: 214px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="disap.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Disappearing Messages</p>
+                            </li>
+                            <li style="margin-left: 177px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="lock.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Encryption</p>
+                            </li>
+                            <li style="margin-left: 253px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="dele.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;color: red;">Delete Chat</p>
+                            </li>
+                            <li style="margin-left: 244px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box" id="box-5">
+                    <div class="nav2" onclick="showDes5()">
+                        <img src="ishan.png" alt="" class="circleImg" id="b5i5">
+                        <div class="Cre">
+                            <p style=" margin-top: 10px;" id="b5p5">Ishan</p>
+                            <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                            <div id="RiNav">
+                                <img src="search.png" alt="" id="rightNav" class="search">
+                                <img src="HamBurger.png" alt="" id="rightNav" class="Ham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="message" id="mess5">
+
+                        </div>
+                        <div class="foot">
+                            <img src="smily.png" alt="" class="FootPic F1">
+                            <img src="plus.png" alt="" class="FootPic F2">
+                            <input type="text" placeholder="Type a messages" id="BaseInp5" onclick="clickMe5()">
+                            <img src="send.png" alt="" class="F3" id="f12" onclick="Event25()">
+                            <img src="mic.png" alt="" class="F3" id="f13">
+                        </div>
+                    </div>
+                </div>
+                <div class="DesBox" id="Des5" id="Dis">
+                    <div class="topCross">
+                        <div class="insi">
+                            <img src="cross.png" alt="" onclick="CloseDes5()">
+                            <p style="margin-left: 30px;opacity: 0.8;">Contact info</p>
+                        </div>
+                    </div>
+                    <div class="MidImg">
+                        <div class="InMid">
+                            <img src="ishan.png" id="CirImg" onclick="ShowBig5()">
+                            <p style="margin-top: 22px;">Ishan</p>
+                            <p id="opa">+91 9097489374</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="about">
+                        <div class="InAbout">
+                            <p style="opacity: 0.7;">About</p>
+                            <p style="font-size: 24px;font-family: system-ui;">Proud To Be INDIAN😎😎....</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="media about">
+                        <div class="InAbout">
+                            <p style="font-size: 17px;font-family: system-ui;">Media, Links, Docs..</p>
+                            <p style="font-size: 14px;font-family: system-ui;">No Media</p>
+                        </div>
+                    </div>
+                    <div class="LineD">
+
+                    </div>
+                    <div class="stared">
+                        <ul class="star">
+                            <li><img src="star.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Starred Messages</p>
+                            </li>
+                            <li style="margin-left: 214px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="disap.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Disappearing Messages</p>
+                            </li>
+                            <li style="margin-left: 177px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="lock.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;">Encryption</p>
+                            </li>
+                            <li style="margin-left: 253px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                        <ul class="disap">
+                            <li><img src="dele.png" alt=""></li>
+                            <li style="margin-left: 20px; margin-top: 4px;">
+                                <p style="font-size: 14px;font-family: system-ui;color: red;">Delete Chat</p>
+                            </li>
+                            <li style="margin-left: 244px;">
+                                <p style="font-size: 20px; font-weight: bolder;">></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box" id="box-6">
+                    <div class="nav2">
+                        <img src="Kim-Jong.png" alt="" class="circleImg">
+                        <div class="Cre">
+                            <p style=" margin-top: 10px;">Kartik rastogi</p>
+                            <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                            <div id="RiNav">
+                                <img src="search.png" alt="" id="rightNav" class="search">
+                                <img src="HamBurger.png" alt="" id="rightNav" class="Ham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="message" id="mess6">
+
+                        </div>
+                        <div class="foot">
+                            <img src="smily.png" alt="" class="FootPic F1">
+                            <img src="plus.png" alt="" class="FootPic F2">
+                            <input type="text" placeholder="Type a messages" id="BaseInp6" onclick="clickMe6()">
+                            <img src="send.png" alt="" class="F3" id="f14" onclick="Event26()">
+                            <img src="mic.png" alt="" class="F3" id="f15">
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="box-7">
+                    <div class="nav2">
+                        <img src="pratham.png" alt="" class="circleImg">
+                        <div class="Cre">
+                            <p style=" margin-top: 10px;">Pratham Arora</p>
+                            <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                            <div id="RiNav">
+                                <img src="search.png" alt="" id="rightNav" class="search">
+                                <img src="HamBurger.png" alt="" id="rightNav" class="Ham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="message" id="mess7">
+
+                        </div>
+                        <div class="foot">
+                            <img src="smily.png" alt="" class="FootPic F1">
+                            <img src="plus.png" alt="" class="FootPic F2">
+                            <input type="text" placeholder="Type a messages" id="BaseInp7" onclick="clickMe7()">
+                            <img src="send.png" alt="" class="F3" id="f16" onclick="Event27()">
+                            <img src="mic.png" alt="" class="F3" id="f17">
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="box-8">
+                    <div class="nav2">
+                        <img src="dell.png" alt="" class="circleImg">
+                        <div class="Cre">
+                            <p style=" margin-top: 10px;">Dell</p>
+                            <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                            <div id="RiNav">
+                                <img src="search.png" alt="" id="rightNav" class="search">
+                                <img src="HamBurger.png" alt="" id="rightNav" class="Ham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="message" id="mess8">
+
+                        </div>
+                        <div class="foot">
+                            <img src="smily.png" alt="" class="FootPic F1">
+                            <img src="plus.png" alt="" class="FootPic F2">
+                            <input type="text" placeholder="Type a messages" id="BaseInp8" onclick="clickMe8()">
+                            <img src="send.png" alt="" class="F3" id="f18" onclick="Event28()">
+                            <img src="mic.png" alt="" class="F3" id="f19">
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="box-9">
+                    <div class="nav2">
+                        <img src="My_Pic3.jpg" alt="" class="circleImg">
+                        <div class="Cre">
+                            <p style=" margin-top: 10px;">98053xxxxx</p>
+                            <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                            <div id="RiNav">
+                                <img src="search.png" alt="" id="rightNav" class="search">
+                                <img src="HamBurger.png" alt="" id="rightNav" class="Ham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="foot">
+                            <div class="message" id="mess9">
+
+                            </div>
+                            <img src="smily.png" alt="" class="FootPic F1">
+                            <img src="plus.png" alt="" class="FootPic F2">
+                            <input type="text" placeholder="Type a messages" id="BaseInp9" onclick="clickMe9()">
+                            <img src="send.png" alt="" class="F3" id="f20" onclick="Event29()">
+                            <img src="mic.png" alt="" class="F3" id="f21">
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="box-10">
+                    <div class="nav2">
+                        <img src="My_Pic3.jpg" alt="" class="circleImg">
+                        <div class="Cre">
+                            <p style=" margin-top: 10px;">98053xxxxx</p>
+                            <p style="opacity: 0.5; margin-top: 10px;">~Hello I'm using whatsapp</p>
+                            <div id="RiNav">
+                                <img src="search.png" alt="" id="rightNav" class="search">
+                                <img src="HamBurger.png" alt="" id="rightNav" class="Ham">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="message" id="mess10">
+
+                        </div>
+                        <div class="foot">
+                            <img src="smily.png" alt="" class="FootPic F1">
+                            <img src="plus.png" alt="" class="FootPic F2">
+                            <input type="text" placeholder="Type a messages" id="BaseInp10" onclick="clickMe10()">
+                            <img src="send.png" alt="" class="F3" id="f22" onclick="Event210()">
+                            <img src="mic.png" alt="" class="F3" id="f23">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="box" id="box-11">11</div>
+                <div class="box" id="box-12">12</div>
+                <div class="box" id="box-13">13</div>
+                <div class="box" id="box-14">14</div>
+                <div class="box" id="box-15">15</div>
+                <div class="box" id="box-16">16</div>
+                <div class="box" id="box-17">17</div> -->
+
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
